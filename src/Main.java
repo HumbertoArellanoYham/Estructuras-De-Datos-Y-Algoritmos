@@ -1,7 +1,14 @@
+import String.Palindromo;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
+        Palindromo palindromo = new Palindromo();
+        boolean word = palindromo.wordPalindromo("madam");
+
+        System.out.println("Es una palabra palindromo: " + word);
+
         /*
         // Arreglo desordenado = {18, 25, 10, 19};
         // positionNumber = 3
@@ -75,11 +82,13 @@ public class Main {
         System.out.println(numeroPotencia.potenciaDeNumeros(10));
 */
 
+/*
         TargetNumber stringProblemTwoSum = new TargetNumber();
         int[] result = stringProblemTwoSum.twoSum(new int[] {9, 2, 5, 6}, 7);
         for(Integer valores: result){
             System.out.println(valores);
         }
+*/
     }
 
     public static class Algoritmo {
