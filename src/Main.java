@@ -1,13 +1,27 @@
-import String.Palindromo;
+import String.*;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
+        List<String> lista = Arrays.asList("Juan", "Marcos", "Luis", "Maria", "Juan", "Paty", "Maria");
+        NombreRepetido nombreRepetido = new NombreRepetido();
+
+        for (Integer clave: nombreRepetido.listaConNombreNoRepetidos(lista).keySet()) {
+            String valor = nombreRepetido.listaConNombreNoRepetidos(lista).get(clave);
+
+            System.out.println("Clave " + clave + "Valor " + valor);
+        }
+
+/*
         Palindromo palindromo = new Palindromo();
         boolean word = palindromo.wordPalindromo("madam");
 
         System.out.println("Es una palabra palindromo: " + word);
+*/
 
         /*
         // Arreglo desordenado = {18, 25, 10, 19};
