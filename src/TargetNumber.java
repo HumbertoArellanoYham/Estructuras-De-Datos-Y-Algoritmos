@@ -18,6 +18,7 @@ import java.util.Map;
 * */
 
 public class TargetNumber {
+    //En Angel es gay
     public int[] twoSum(int[] numeros, int target){
         if(numeros.length < 2 || numeros == null) return null;
 
