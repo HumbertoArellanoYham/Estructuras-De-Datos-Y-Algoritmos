@@ -1,3 +1,5 @@
+import LinkedList.exercice1.Node;
+import LinkedList.exercice1.SingleLinkedList;
 import String.*;
 
 import java.util.ArrayList;
@@ -6,7 +8,19 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        SingleLinkedList linked_list = new SingleLinkedList();
 
+        linked_list.appendToTaTail(4);
+        linked_list.appendToTaTail(5);
+        linked_list.appendToTaTail(8);
+
+        linked_list.printLinkedList();
+
+        linked_list.deleteNode(5);
+        linked_list.printLinkedList();
+
+
+/*
         List<String> lista = Arrays.asList("Juan", "Marcos", "Luis", "Maria", "Juan", "Paty", "Maria");
         NombreRepetido nombreRepetido = new NombreRepetido();
 
@@ -15,6 +29,7 @@ public class Main {
 
             System.out.println("Clave " + clave + "Valor " + valor);
         }
+*/
 
 /*
         Palindromo palindromo = new Palindromo();
