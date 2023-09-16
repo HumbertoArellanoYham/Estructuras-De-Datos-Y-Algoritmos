@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 /*
 * Complejidad algoritmica: O(log n)
 * Por que al momento de hacer iteraciones

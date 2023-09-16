@@ -5,20 +5,20 @@ import String.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
-        SingleLinkedList linked_list = new SingleLinkedList();
+        Anagram anagram = new Anagram();
 
-        linked_list.appendToTaTail(4);
-        linked_list.appendToTaTail(5);
-        linked_list.appendToTaTail(8);
+        String[] strings = {"saco", "arresto", "programa", "rastreo", "caso"};
 
-        linked_list.printLinkedList();
+        List<List<String>> allAnagrams = anagram.groupAnagrams(strings);
 
-        linked_list.deleteNode(5);
-        linked_list.printLinkedList();
-
+        for (ListIterator<List<String>> it = allAnagrams.listIterator(); it.hasNext(); ) {
+            String word = it.next().toString();
+            System.out.println(word);
+        }
 
 /*
         List<String> lista = Arrays.asList("Juan", "Marcos", "Luis", "Maria", "Juan", "Paty", "Maria");
@@ -58,14 +58,14 @@ public class Main {
         * */
 
         /*
-        BusquedaDePares busquedaDePares = new BusquedaDePares();
+        OtherAlgorithms.BusquedaDePares busquedaDePares = new OtherAlgorithms.BusquedaDePares();
         int[] arrayDeEnteros = {18, 25, 10, 15};
 
         busquedaDePares.AlgoritmoDePares(arrayDeEnteros);
         */
 
         /*
-        MultiplicacionConSuma multiplicacionConSuma = new MultiplicacionConSuma();
+        OtherAlgorithms.MultiplicacionConSuma multiplicacionConSuma = new OtherAlgorithms.MultiplicacionConSuma();
         int product = multiplicacionConSuma.mulplicationDeDosNumeros(5, 3);
 
         System.out.println(product);
@@ -73,7 +73,7 @@ public class Main {
 
         /*
         int[] array = {5, 15, 12, 24};
-        CopyToArrayNew copyToArrayNew = new CopyToArrayNew();
+        OtherAlgorithms.CopyToArrayNew copyToArrayNew = new OtherAlgorithms.CopyToArrayNew();
 
         for (int value : copyToArrayNew.arrayCopy(array)){
             System.out.println(value);
@@ -86,13 +86,12 @@ public class Main {
 
 //        int[] arrayA = {10, 15, 4, 2};
 //        int[] arrayB = {12, 18, 1, 9};
-//        PrintParesOfTheTwoArrays printParesOfTheTwoArrays = new PrintParesOfTheTwoArrays();
 //        printParesOfTheTwoArrays.paresDeDosArray(arrayA, arrayB);
 
 
         /*
         int[] arrayDesordenado = {4, 8, 2, 1};
-        BubbleSort bubbleSort = new BubbleSort();
+        OtherAlgorithms.BubbleSort bubbleSort = new OtherAlgorithms.BubbleSort();
         int[] orderedArray = bubbleSort.sortOfTheArray(arrayDesordenado);
 
         for(int valor: orderedArray){
@@ -101,18 +100,18 @@ public class Main {
         */
 
 /*
-        Factorial factorial = new Factorial();
+        OtherAlgorithms.Factorial factorial = new OtherAlgorithms.Factorial();
         int result = factorial.factorialConRecursividad(5);
         System.out.println(result);
 */
 
 /*
-        NumeroPotencia numeroPotencia = new NumeroPotencia();
+        OtherAlgorithms.NumeroPotencia numeroPotencia = new OtherAlgorithms.NumeroPotencia();
         System.out.println(numeroPotencia.potenciaDeNumeros(10));
 */
 
 /*
-        TargetNumber stringProblemTwoSum = new TargetNumber();
+        OtherAlgorithms.TargetNumber stringProblemTwoSum = new OtherAlgorithms.TargetNumber();
         int[] result = stringProblemTwoSum.twoSum(new int[] {9, 2, 5, 6}, 7);
         for(Integer valores: result){
             System.out.println(valores);

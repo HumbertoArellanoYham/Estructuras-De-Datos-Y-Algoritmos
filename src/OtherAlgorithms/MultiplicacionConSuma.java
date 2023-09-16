@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 /*Multiplication de dos numeros
 * Lo que se debe tener en cuenta,
 * es que no se debe utilizar el operador de multiplicar.*/

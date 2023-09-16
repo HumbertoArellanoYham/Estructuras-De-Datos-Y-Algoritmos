@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 public class PrintParesOfTheTwoArrays {
     public void paresDeDosArray(int[] arrayA, int[] arrayB){
         for(int valorA : arrayA){

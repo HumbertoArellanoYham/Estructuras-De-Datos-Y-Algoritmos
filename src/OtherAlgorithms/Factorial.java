@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 public class Factorial {
     public int factorial(int numero){
         int resultFinal = 1;

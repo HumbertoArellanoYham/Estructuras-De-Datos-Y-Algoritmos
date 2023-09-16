@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 /* Algoritmo de pares.
 * Dado un array de enteros [18, 25, 10, 15]
 * Mostrar en pantalla todos los pares disponibles.

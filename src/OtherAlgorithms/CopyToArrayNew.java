@@ -1,3 +1,5 @@
+package OtherAlgorithms;
+
 /*
 * Copiar todos los elementos de un arreglo hacia otro.
 * Entrada: {5, 2, 4, 6}
