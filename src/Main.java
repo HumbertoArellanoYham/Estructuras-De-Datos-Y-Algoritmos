@@ -1,14 +1,26 @@
-import LinkedList.exercice1.Node;
-import LinkedList.exercice1.SingleLinkedList;
 import String.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        ZeroMatriz zeroMatriz = new ZeroMatriz();
+        int[][] matrizResolve = {
+                {2, 1, 3, 0, 2},
+                {7, 4, 1, 3, 8},
+                {4, 0, 1, 2, 1},
+                {9, 3, 4, 1, 9}
+        };
+
+        zeroMatriz.zeroMatrizSolution(matrizResolve);
+
+        Iterator<int[]> it = Arrays.stream(matrizResolve).iterator();
+
+        while(it.hasNext()){
+            System.out.println(Arrays.toString(it.next()));
+        }
+
+/*
         Anagram anagram = new Anagram();
 
         String[] strings = {"saco", "arresto", "programa", "rastreo", "caso"};
@@ -19,6 +31,7 @@ public class Main {
             String word = it.next().toString();
             System.out.println(word);
         }
+*/
 
 /*
         List<String> lista = Arrays.asList("Juan", "Marcos", "Luis", "Maria", "Juan", "Paty", "Maria");
