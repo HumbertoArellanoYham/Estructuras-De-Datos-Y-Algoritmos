@@ -36,7 +36,7 @@ public class SingleLinkedList {
         
     }
 
-    public void printLinkedList(){
+    public void printLinkedList(Node head){
         if(head == null){
             System.out.println("End");
             return;

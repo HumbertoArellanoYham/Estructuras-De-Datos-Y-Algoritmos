@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class DeleteNodeDups {
 
     public void removeDups(Node head) {
-        HashSet<Integer> foundValues = new HashSet<Integer>();
+        HashSet<Integer> foundValues = new HashSet<>();
         foundValues.add(head.valor);
         Node current = head;
 
